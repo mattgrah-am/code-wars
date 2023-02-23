@@ -1,7 +1,3 @@
 export const summation = (num: number) => {
-  let result = 0;
-  for (let i = 0; i < num; i++) {
-    result += i;
-  }
-  return result;
+  return (num * (num + 1)) / 2;
 };
