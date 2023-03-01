@@ -1,5 +1,3 @@
-
-
 def get_sum(a,b):
     x=0                           
     if a == b:                    
