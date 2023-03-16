@@ -1,5 +1,5 @@
-// import { MORSE_CODE } from "./preloaded";
-const decodeMorse = (morseCode: string): string => {
+import { MORSE_CODE } from "./preloaded";
+export const decodeMorse = (morseCode: string): string => {
   return morseCode
     .split(" ")
     .map((v, i) => (MORSE_CODE[v] != undefined ? MORSE_CODE[v] : 1))
@@ -8,5 +8,3 @@ const decodeMorse = (morseCode: string): string => {
     .replace(/1/g, " ")
     .trim();
 };
-
-console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
